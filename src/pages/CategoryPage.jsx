@@ -14,6 +14,7 @@ function CategoryPage({ removeCard, removeLikes, addLikes, ...rest }) {
           <Card
             key={item.name}
             name={item.name}
+            likes={item.likes}
             removeCard={() => removeCard(item.name, category)}
             removeLikes={() => removeLikes(item.name, category, "remove")}
             addLikes={() => addLikes(item.name, category, "add")}

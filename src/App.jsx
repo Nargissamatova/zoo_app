@@ -10,14 +10,22 @@ import ErrorPage from "./pages/ErrorPage";
 
 function App() {
   const [zoo, setZoo] = useState({ animals, birds, insects, fishes });
-  const likesHandler = (name, category, action) => {
-    console.log(name, category, action, "was clicked");
-  };
 
   const removeHandler = (name, category) => {
     setZoo((prevZoo) => ({
       ...prevZoo,
       [category]: prevZoo[category].filter((el) => el.name !== name),
+    }));
+  };
+  const likesHandler = (name, category, action) => {
+    // console.log(name, category, action, "was clicked");
+    setZoo((prevZoo) => ({
+      ...prevZoo,
+      [category]: prevZoo[category].map((el) =>
+        el.name === name
+          ? { ...el, likes: el.likes + (action === "add" ? 1 : -1) }
+          : el
+      ),
     }));
   };
 
