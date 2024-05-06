@@ -10,7 +10,7 @@ function CategoryPage({ ...rest }) {
     <>
       <h2>{category}</h2>
       {categoryItems.map((item) => {
-        return <Card key={item.name} name={categoryItems.name} />;
+        return <Card key={item.name} name={item.name} />;
       })}
     </>
   );
