@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.home-container {
+    display: flex;
+    height: 100vh;
+}
+
+.half {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    text-decoration: none;
+}
+
+.half.animals {
+    background-image: url("../images/animals.avif");
+
+}
+
+.half.birds {
+    background-image: url("../images/birds.jpg");
+    filter: brightness(0.9);
+
+}
+
+.half-link {
+    color: white;
+    text-decoration: none;
+    font-size: 27px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.926);
+    /* Add text shadow */
+
+}

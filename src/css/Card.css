@@ -1,0 +1,55 @@
+/* Card.css */
+
+.card {
+    position: relative;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    display: block;
+}
+
+.card p {
+    text-align: center;
+    padding: 1em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.911);
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.858);
+}
+
+.like-icon,
+.dislike-icon {
+    color: white;
+    cursor: pointer;
+}
+
+.likes-count {
+    color: white;
+}
+
+.remove-icon {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-radius: 50%;
+    /* make it circular */
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
