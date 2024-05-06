@@ -1,13 +1,23 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { useState } from "react";
+import { animals, birds, insects, fishes } from "./animalsList";
+
 import Root from "./pages/Root";
 import Home from "./pages/Home";
+import About from "./pages/About";
 import CategoryPage from "./pages/CategoryPage";
 import ErrorPage from "./pages/ErrorPage";
-import { animals, birds, insects } from "./animalsList";
 
 function App() {
-  const [zoo, setZoo] = useState({ animals, birds, insects });
+  const [zoo, setZoo] = useState({ animals, birds, insects, fishes });
+  const likesHandler = (name, category, action) => {
+    console.log(name, category, action, "was clicked");
+  };
+
+  const removeHandler = (name, category, action) => {
+    console.log(name, category, action, "was clicked");
+  };
+
   const router = createBrowserRouter([
     {
       path: "/",
@@ -18,9 +28,18 @@ function App() {
       element: <Root />,
       errorELement: <ErrorPage />,
       children: [
-        { path: ":category", element: <CategoryPage {...zoo} /> },
-        /*         { path: "/about", element: <About {...zoo} /> },
-         */
+        {
+          path: ":category",
+          element: (
+            <CategoryPage
+              addLikes={likesHandler}
+              removeLikes={likesHandler}
+              removeCard={removeHandler}
+              {...zoo}
+            />
+          ),
+        },
+        { path: "/about", element: <About {...zoo} /> },
       ],
     },
   ]);

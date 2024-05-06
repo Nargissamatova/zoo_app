@@ -1,8 +1,8 @@
 import { useParams } from "react-router-dom";
 import Card from "../components/Card";
 
-function CategoryPage({ ...rest }) {
-  const { category } = useParams();
+function CategoryPage({ removeCard, removeLikes, addLikes, ...rest }) {
+  const { category } = useParams(); // reading url
 
   const categoryItems = rest[category];
   console.log(category);
@@ -10,7 +10,15 @@ function CategoryPage({ ...rest }) {
     <>
       <h2>{category}</h2>
       {categoryItems.map((item) => {
-        return <Card key={item.name} name={item.name} />;
+        return (
+          <Card
+            key={item.name}
+            name={item.name}
+            removeCard={() => removeCard(item.name, category)}
+            removeLikes={() => removeLikes(item.name, category, "remove")}
+            addLikes={() => addLikes(item.name, category, "add")}
+          />
+        );
       })}
     </>
   );

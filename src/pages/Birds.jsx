@@ -1,9 +1,9 @@
-import Display from "./Display";
+import Animals from "./Animals";
 
 function Birds() {
   return (
     <div>
-      <Display />
+      <Animals />
     </div>
   );
 }
