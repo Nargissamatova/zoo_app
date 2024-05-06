@@ -4,8 +4,11 @@ import Home from "./pages/Home";
 import Animals from "./pages/Animals";
 import Birds from "./pages/Birds";
 import ErrorPage from "./pages/ErrorPage";
+import { useState } from "react";
+import { animals, birds } from "./animalsList";
 
 function App() {
+  const [zoo, setZoo] = useState({ animals, birds });
   const router = createBrowserRouter([
     {
       path: "/",
