@@ -1,5 +1,6 @@
 import "../css/Card.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import { Link } from "react-router-dom";
 
 function Card({ name, likes, addLikes, removeCard, removeLikes }) {
   return (
@@ -20,6 +21,10 @@ function Card({ name, likes, addLikes, removeCard, removeLikes }) {
       <div className="remove-icon" onClick={removeCard}>
         <i className="fas fa-times fa-lg"></i>
       </div>
+
+      <button>
+        <Link to={name}>See more</Link>
+      </button>
     </div>
   );
 }

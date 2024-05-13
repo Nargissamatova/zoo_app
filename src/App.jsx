@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import CategoryPage from "./pages/CategoryPage";
 import ErrorPage from "./pages/ErrorPage";
+import SinglePage from "./pages/SinglePage";
 
 function App() {
   const [zoo, setZoo] = useState({ animals, birds, insects, fishes });
@@ -51,6 +52,7 @@ function App() {
           ),
         },
         { path: "/about", element: <About {...zoo} /> },
+        { path: ":category/:name", element: <SinglePage {...zoo} /> },
       ],
     },
   ]);
