@@ -19,8 +19,7 @@ Built with:
 Live page [here](https://github.com/margittennosaar/markdown_study_materials)
 
 ## Screenshot
-![Alt Text] (https://imgur.com/BrmxxRr)
-![Alt Text](https://imgur.com/BrmxxRr)
+![Alt Text](https://imgur.com/BrmxxRr.png)
 
 
 ## Sources 
