@@ -15,12 +15,12 @@ function Home() {
         </Link>
       </div>
       <div className="quarter insects">
-        <Link to="/birds" className="quarter-link">
+        <Link to="/insects" className="quarter-link">
           <h1>Insects</h1>
         </Link>
       </div>
       <div className="quarter fish">
-        <Link to="/fish" className="quarter-link">
+        <Link to="/fishes" className="quarter-link">
           <h1>Fish</h1>
         </Link>
       </div>

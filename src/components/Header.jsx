@@ -26,6 +26,9 @@ function Header() {
           <li>
             <NavLink to="/fishes">Fish</NavLink>
           </li>
+          <li>
+            <NavLink to="/insects">Insects</NavLink>
+          </li>
         </ul>
       </nav>
       <div className="input_container">
