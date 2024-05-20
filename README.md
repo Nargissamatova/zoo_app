@@ -10,13 +10,21 @@ Built with:
 - HTML
 - JS
 - CSS
-- Bootstrap
 - Reactjs
-- ...
 
 ## Setup and usage
 
-Live page [here](https://github.com/margittennosaar/markdown_study_materials)
+Prerequisites
+Make sure you have the following installed on your system:
+
+Node.js (version 12 or higher)
+npm (Node Package Manager)
+Installation
+
+1. Clone the repository
+2. Navigate to the project directory:
+3. Install the dependencies
+4. Start the development server
 
 ## Screenshot
 
@@ -28,7 +36,5 @@ Live page [here](https://github.com/margittennosaar/markdown_study_materials)
 - [Make a README](https://www.makeareadme.com/)
 
 ## Authors and acknowledgment
-
-Margit Tennosaar
 
 - GitHub @margittennosaar
