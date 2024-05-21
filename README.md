@@ -28,7 +28,7 @@ Installation
 
 ## Screenshot
 
-![Alt Text](https://imgur.com/a/kbDKtH9.png)
+![Alt Text](https://imgur.com/kbDKtH9.png)
 
 ## Sources
 
