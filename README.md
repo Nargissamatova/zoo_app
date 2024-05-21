@@ -35,6 +35,6 @@ Installation
 - [GitHub Guides - masterin markdown](https://guides.github.com/features/mastering-markdown/)
 - [Make a README](https://www.makeareadme.com/)
 
-## Authors and acknowledgment
+## Acknowledgment
 
 - GitHub @margittennosaar
