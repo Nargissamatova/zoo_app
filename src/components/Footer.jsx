@@ -3,7 +3,9 @@ import "../css/Footer.css";
 function Footer() {
   return (
     <div className="footer_container">
-      <h1>This is footer</h1>
+      <p>
+        &copy; {new Date().getFullYear()} Nargis Samatova. All rights reserved.
+      </p>
     </div>
   );
 }
