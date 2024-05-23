@@ -1,0 +1,37 @@
+h1 {
+    text-align: center;
+    padding: 2em;
+}
+
+.about_container,
+.pages_container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.about_container div {
+    width: 35%;
+}
+
+.about_container p {
+    padding-top: 1em;
+    font-size: large;
+}
+
+.about_container img {
+    width: 60%;
+    border-radius: 1em;
+}
+
+.pages_container {
+    margin-top: 5em;
+}
+
+.pages_container div {
+    border-radius: 1em;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+    width: 25%;
+    padding: 2em;
+}

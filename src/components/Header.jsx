@@ -1,10 +1,12 @@
 import { NavLink, Link } from "react-router-dom";
 import "../css/Header.css";
+import logo from "../images/zoo_logo.png";
 
 function Header() {
   return (
     <div className="header_container">
       <div className="logo">
+        <img className="zoo_logo" src={logo} alt="zoo logo" />
         <Link to="/">
           <h2>Zoo App</h2>
         </Link>

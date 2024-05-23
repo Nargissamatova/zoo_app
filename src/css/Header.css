@@ -30,10 +30,41 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #ffffff;
+    position: relative;
+    font-weight: bold;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: rgb(155, 246, 161);
+    transition: width 0.3s ease, right 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+    right: 0;
+}
+
+nav ul li a:hover {
+    color: rgb(155, 246, 161);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
 }
 
 .logo a {
-    color: rgb(231, 231, 128);
+    color: rgb(155, 246, 161);
     text-decoration: none;
+}
 
+.zoo_logo {
+    width: 7em;
 }
