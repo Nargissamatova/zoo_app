@@ -1,5 +1,3 @@
-/* Card.css */
-
 .card {
     position: relative;
     width: 300px;
@@ -45,11 +43,32 @@
     color: rgb(255, 255, 255);
     cursor: pointer;
     border-radius: 50%;
-    /* make it circular */
     width: 30px;
     height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.858);
+}
+
+.see-more-container {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.858);
+}
+
+.see-more-button {
+    text-decoration: none;
+    color: rgb(38, 38, 38);
+    background-color: rgb(155, 246, 161);
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 0.9em;
+}
+
+.see-more-button:hover {
+    background-color: rgb(97, 173, 102);
+    color: white;
 }

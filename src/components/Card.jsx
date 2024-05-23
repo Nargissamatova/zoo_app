@@ -22,9 +22,11 @@ function Card({ name, likes, addLikes, removeCard, removeLikes }) {
         <i className="fas fa-times fa-lg"></i>
       </div>
 
-      <button>
-        <Link to={name}>See more</Link>
-      </button>
+      <div className="see-more-container">
+        <Link to={name} className="see-more-button">
+          See more
+        </Link>
+      </div>
     </div>
   );
 }
