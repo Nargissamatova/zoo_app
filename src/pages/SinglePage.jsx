@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import "../css/App.css";
 
 function SinglePage({ ...rest }) {
   const { category, name } = useParams();
+  const navigate = useNavigate();
   const categoryItems = rest[category];
   const data = categoryItems.find((el) => el.name === name);
 
@@ -30,6 +33,9 @@ function SinglePage({ ...rest }) {
 
   return (
     <>
+      <button onClick={() => navigate(-1)} className="back_button">
+        <FontAwesomeIcon icon={faArrowLeft} /> Back to Previous Page
+      </button>
       <h2 className="category_title">{data.name}</h2>
       <div className="category_container">
         <img

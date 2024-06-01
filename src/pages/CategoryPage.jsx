@@ -29,8 +29,3 @@ function CategoryPage({ removeCard, removeLikes, addLikes, ...rest }) {
 }
 
 export default CategoryPage;
-
-/*
-
-
-*/

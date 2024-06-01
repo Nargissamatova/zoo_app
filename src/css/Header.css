@@ -55,6 +55,17 @@ nav ul li a:hover {
     color: rgb(155, 246, 161);
 }
 
+nav ul li a.active {
+    color: rgb(155, 246, 161);
+    /* Active link color */
+}
+
+nav ul li a.active::after {
+    width: 100%;
+    /* Underline active link */
+    right: 0;
+}
+
 .logo {
     display: flex;
     align-items: center;

@@ -31,7 +31,9 @@ h1 {
 
 .pages_container div {
     border-radius: 1em;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+    color: white;
+    background-color: rgb(57, 57, 57);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
     width: 25%;
-    padding: 2em;
+    padding: 2.5em;
 }

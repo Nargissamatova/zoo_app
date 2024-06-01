@@ -57,6 +57,18 @@ h2 {
   max-width: 400px;
 }
 
+.back_button {
+  background-color: rgb(234, 152, 0);
+  margin: 3em 0 0 3em;
+  color: white;
+  font-weight: bolder;
+  padding: 1em;
+  border: none;
+  border-radius: 2em;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+
+}
+
 @media (max-width: 768px) {
   .category_container {
     flex-direction: column;

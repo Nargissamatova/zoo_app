@@ -14,22 +14,52 @@ function Header() {
       <nav>
         <ul>
           <li>
-            <NavLink to="/">Home</NavLink>
+            <NavLink
+              to="/"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              Home
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/about">About</NavLink>
+            <NavLink
+              to="/about"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              About
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/birds">Birds</NavLink>
+            <NavLink
+              to="/birds"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              Birds
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/animals">Animals</NavLink>
+            <NavLink
+              to="/animals"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              Animals
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/fishes">Fish</NavLink>
+            <NavLink
+              to="/fishes"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              Fish
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/insects">Insects</NavLink>
+            <NavLink
+              to="/insects"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              Insects
+            </NavLink>
           </li>
         </ul>
       </nav>
