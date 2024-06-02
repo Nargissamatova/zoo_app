@@ -1,7 +1,14 @@
-# Project title
+# Zoo App
 
-A short description of this project.
-What it is about, who are target group and why that project was made.
+            Welcome to our web app, your go-to platform for exploring the
+            fascinating world of animals, birds, insects, and fish! Whether
+            you're a nature enthusiast, a student, or just curious about the
+            diverse creatures that inhabit our planet, our app is designed to
+            provide you with detailed and engaging information.
+
+            This project is a Minimum Viable Product (MVP) designed to offer a
+            seamless and user-friendly experience as you navigate through the
+            animal kingdom.
 
 ## Technologies used
 
