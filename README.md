@@ -44,4 +44,4 @@ Installation
 
 ## Acknowledgment
 
-- GitHub @margittennosaar
+- credits to @margittennosaar
